@@ -1,3 +1,3 @@
-coordis.github.com
+coordins.github.com
 ==================
 web page
