@@ -127,7 +127,7 @@
       </div>
       </div>
 
-      <hr>
+     
 
       <div class="footer">
         <p style="text-align:center;">&copy; coordins 2013</p>
@@ -146,5 +146,22 @@
   ga('create', 'UA-44167074-1', 'coordins.com');
   ga('send', 'pageview');
 
+</script>
+
+<script>
+$(document).ready(function(){
+  setInterval(function(){
+    colors = ["#fff","#16a085","#27ae60","#2980b9","#8e44ad","#2c3e50","#f1c40f","#e67e22","#e74c3c","#95a5a6","#ecf0f1"];
+    var random = Math.floor(Math.random() * 10);
+
+    $('body').css("background-color", colors[random]);
+
+    if(random==10 || random==0){
+      $('body').css("color", colors[9]);
+    }else{
+      $('body').css("color",colors[0]);
+    }
+  },2000)
+});
 </script>
 </html>
